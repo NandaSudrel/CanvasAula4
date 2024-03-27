@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 4 Canvas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p><h1>Canvas Círculo</h1></p>
+    <canvas width="400" height="200" id="myCanvas" style="border: 5px solid rebeccapurple;" ></canvas>
+    <script type="text/javascript">
+        //Chamando Canvas
+        var Canvas = document.getElementById("myCanvas");
+        var ctx=Canvas.getContext("2d"); //ctx é usada para consultar o canvas
+        ctx.fillStyle="purple"; // cor do circulo
+        ctx.beginPath(); //inicia o caminho
+        ctx.arc(300,70,50,0,Math.PI*2) //Cria um círculo no canvas (X, Y, Raio,)
+        //Inicio do Círvulo, Final do Círculo PI*2 = 360 graus
+        ctx.closePath(); //finaliza o caminho do círculo
+        ctx.fill(); // Mostra o círculo
+
+    </script>
+</body>
+</html>

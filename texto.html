@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto no Canvas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p><h1>Texto no Canvas</h1></p>
+    <canvas width="600" height="400" id="myCanvas" style="border: 3px solid purple">
+        <script type="text/javascript">
+            var canvas=document.getElementById("myCanvas");
+            var ctx=canvas.getContext("2d");
+            ctx.fillStyle="black"
+            ctx.font="12pt arial"
+            ctx.fillText("Olá Mundo", 50,100)
+            ctx.moveTo(0,100);
+            ctx.lineTo(700,100);
+            ctx.stroke();
+           
+
+        </script>
+
+    </canvas>
+    
+</body>
+</html>
